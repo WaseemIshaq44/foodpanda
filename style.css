@@ -154,9 +154,7 @@ nav {
 }
 
 .location {
-    background-color: cadetblue;
     margin: 0px auto;
-    /* padding: 0px auto; */
     height: 50px;
     width: 50%;
     position: relative;
@@ -195,6 +193,12 @@ button {
     font-size: 14px;
     border: none;
     border-radius: 10px;
+    transition: transform 1.5s;
+}
+button:hover{
+    transform: scale(1.1);
+    background-color: #000000;
+    color: #ffffff;
 }
 
 h3 {
