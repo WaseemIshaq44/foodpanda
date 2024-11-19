@@ -2,26 +2,34 @@
     font-family: 'osbold';
     src: url(fonts/open-sans-bold.woff2);
 }
+
 @font-face {
-    font-family: 'ppAgrandir' ;
+    font-family: 'ppAgrandir';
     src: url(fonts/PPAgrandir-600-Bold.otf);
 }
+
 @font-face {
     font-family: 'oslight';
     src: url(fonts/open-sans-light.woff2);
 }
+
 @font-face {
     font-family: 'osregular';
     src: url(fonts/open-sans-regular.woff2);
 }
+
 @font-face {
-    font-family: 'ossemibold' ;
+    font-family: 'ossemibold';
     src: url(fonts/open-sans-semibold.woff2);
 }
 
 nav {
     width: 100%;
     height: 150px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
 }
 
 .pk {
@@ -29,20 +37,23 @@ nav {
     height: 50%;
     background-color: #E21B70;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     padding-top: 15px;
 }
-.pk>div{
+
+.pk>div {
     padding-left: 120px
 }
-.dyw{
+
+.dyw {
     color: #ffffff;
     font-size: 24px;
     font-weight: bold;
     font-family: 'ppAgrandir';
     padding-top: 15px;
 }
-.signupbtn{
+
+.signupbtn {
     width: 150px;
     height: 50px;
     border: 1px solid #ffffff;
@@ -59,65 +70,97 @@ nav {
     justify-content: space-around;
     padding-top: 20px;
 }
-.icon{
+
+.icon {
     display: flex;
     flex-direction: row;
     /* padding-top: 20px; */
 }
-.icon> div >span {
+
+.icon>div>span {
     color: #E21B70;
     font-family: 'ppAgrandir';
     padding-left: 15px;
     font-size: 28px
 }
-.btns{
+
+.btns {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-.libtn{
+
+.libtn {
     width: 75px;
     height: 32px;
     background-color: #ffffff;
     transition: transform 1.5s;
 }
-.libtn>button{
+
+.libtn>button {
     background-color: #ffffff;
     color: #E21B70;
     border: 2px solid black;
     border-radius: 5px solid black;
 }
-.libtn>button:hover{
+
+.libtn>button:hover {
     transform: scale(1.1);
     background-color: #ccbdbdd8;
     color: #ffffff;
 
 }
-.subtn{
+
+.subtn {
     width: 85px;
     height: 32px;
     padding-left: 80px;
 }
-.subtn>button:hover{
+
+.subtn>button:hover {
     transform: scale(1.1);
     background-color: #bb2b6adc;
     color: #ffffff;
 }
+
 .home {
     width: 100%;
     height: 500px;
+    margin-top: 10px;
     background-color: #f1ebeb;
-    background-image: url(./image/refresh-hero-home-pk\ \(1\).png);
+    /* background-image: url(image/refresh-hero-home-pk\ \(1\).png); */
     background-repeat: no-repeat;
     background-position: right center;
+    display: flex;
+    flex-direction: row;
+    margin: 150px 0px 0px 50px;
+}
+
+.hmlft {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 120px;
+}
+
+.htrgt {
+    width: 30%;
+}
+
+.h1 {
+    width: 70%;
+    margin: 0px auto;
 }
 
 .location {
     background-color: cadetblue;
     margin: 0px auto;
-    padding: 0px auto;
+    /* padding: 0px auto; */
     height: 50px;
     width: 50%;
+    position: relative;
+    left: -75px;
 }
 
 input {
@@ -167,7 +210,7 @@ p {
 h2 {
     font-family: "ppAgrandir";
     width: 70%;
-    font-size: 48px;
+    font-size: 32px;
     margin: 0px auto 20px;
     position: relative;
     left: -90px;
@@ -260,12 +303,14 @@ h2 {
     display: flex;
     flex-direction: row;
 }
-.cntus{
+
+.cntus {
     width: 50%;
     margin: 0px auto;
     padding: 48px 0px 48px 32px;
 }
-.cntus>div{
+
+.cntus>div {
     margin-bottom: 20px;
 }
 
@@ -275,14 +320,17 @@ h2 {
     position: relative;
     top: -100px;
 }
-.crprt{
+
+.crprt {
     margin: 0px auto;
     width: 80%;
     height: 600px;
-    object-fit: cover;;
-    overflow:hidden;
+    object-fit: cover;
+    ;
+    overflow: hidden;
 }
-.grd{
+
+.grd {
     width: 80%;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -292,7 +340,8 @@ h2 {
 
 
 }
-.crptovlp{
+
+.crptovlp {
     background-color: #ffffff;
     border: none;
     border-radius: 20px;
@@ -302,24 +351,104 @@ h2 {
     padding: 24px;
     grid-column-start: 1;
     grid-column-end: 7;
-    
+
 }
-.crptovlp>p{
-    font-size:24px;
+
+.crptovlp>p {
+    font-size: 24px;
 }
-.hd{
+
+.hd {
     font-weight: bold;
     font-size: 50px;
 }
-.htraper{
+
+.htraper {
     margin: 0px auto;
     width: 80%;
     font-size: 24px;
 }
-h3{
+
+h3 {
     font-weight: bold;
     font-size: 30px;
 }
-h4{
+
+h4 {
     font-size: 28px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    background-color: #f8f8f8;
+    padding: 20px;
+}
+
+.footer {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.footer-cntrylnks {
+    grid-column: span 2;
+    text-align: center;
+}
+
+.cntrylnk {
+    color: #ff2b85;
+    text-decoration: none;
+    margin-right: 8px;
+}
+
+.cntrylnk:hover {
+    text-decoration: underline;
+}
+
+.footer-links {
+    grid-column: span 1;
+}
+
+.footer-links-list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-link {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+/* Branding for Foodpanda and Delivery Hero */
+.footer-branding {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.brand-logo-image {
+    height: 28px;
+}
+
+/* Social Links */
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-link img {
+    width: 24px;
+    height: 24px;
 }
