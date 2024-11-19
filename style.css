@@ -383,6 +383,7 @@ body {
 }
 
 .footer-container {
+    margin: 0px auto;
     background-color: #f8f8f8;
     padding: 20px;
 }
@@ -412,6 +413,7 @@ body {
 
 .footer-links {
     grid-column: span 1;
+    margin: 0px auto;
 }
 
 .footer-links-list {
